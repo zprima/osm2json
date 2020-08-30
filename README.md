@@ -9,9 +9,14 @@ Uses Newtonsoft.JSON for serializing to JSON.
 
 ## OSM file
 
+Contains information from [slovenia-latest.osm](https://download.geofabrik.de/europe/slovenia.html), which is made available here under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/1-0/).
 All the data is taken from an OMS file. OSM - [OpenStreetMap](https://www.openstreetmap.org/) data file.
 OSM file for Slovenia was downloaded at: https://download.geofabrik.de/europe/slovenia.html
 
 ## Licence
 
-https://www.openstreetmap.org/copyright
+Data gathered from OSM and the data files are under [Open Database Licence](https://www.openstreetmap.org/copyright)
+Code is under MIT.
+
+## Credit
+[OpenStreetMap and its contributors](https://www.openstreetmap.org)
