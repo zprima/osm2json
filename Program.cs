@@ -32,6 +32,7 @@ namespace osm2json
     public string Lat { get; set; }
     public string Lon { get; set; }
     public string Category { get; set; }
+    public string Elevation { get; set; }
     public GeoEntry(string openStreetMapId, string name, string nameNative = null, string nameEnglish = null)
     {
       this.OpenStreetMapId = openStreetMapId;
@@ -87,6 +88,8 @@ namespace osm2json
       string lat = nodeElement.Attribute("lat").Value;
       string lon = nodeElement.Attribute("lon").Value;
 
+      string elevation = nodeElement.Attribute("ele")?.Value;
+
       GeoEntry geoEntry = new GeoEntry(
         openStreetMapId: id,
         name: name,
@@ -96,6 +99,7 @@ namespace osm2json
       geoEntry.Category = category;
       geoEntry.Lat = lat;
       geoEntry.Lon = lon;
+      geoEntry.Elevation = elevation;
 
       GeoEntries.Add(geoEntry);
     }
