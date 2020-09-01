@@ -88,7 +88,7 @@ namespace osm2json
       string lat = nodeElement.Attribute("lat").Value;
       string lon = nodeElement.Attribute("lon").Value;
 
-      string elevation = nodeElement.Attribute("ele")?.Value;
+      string elevation = tags.Where(tag => tag.Attribute("k").Value == "ele").Select(tag => tag.Attribute("v")).FirstOrDefault()?.Value;
 
       GeoEntry geoEntry = new GeoEntry(
         openStreetMapId: id,
