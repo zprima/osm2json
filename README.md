@@ -2,6 +2,10 @@
 
 Reads the OSM file from osm_files directory for a given country and creates a JSON file that contains peaks, waterfalls, castles for it.
 
+## Data in JSON format
+   
+Check data_files folder for any country json files, where data is parsed from the osm file
+
 ## Dependency
 
 Uses Newtonsoft.JSON for serializing to JSON.
